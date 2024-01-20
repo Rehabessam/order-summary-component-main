@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*
+{
+    box-sizing: border-box;
+    --font-family: 'Fraunces', serif;
+    --font-family-one: 'Montserrat', sans-serif;
+    --font-family-two: 'Outfit', sans-serif;
+    --font-family-three: 'Red Hat Display', sans-serif;
+}
+
+body
+{
+   margin: 0;
+   padding: 0;
+   background-image: url(../images/pattern-background-desktop.svg);
+   background-size:contain;
+   background-repeat: no-repeat;
+   background-color:rgb(220, 243, 220);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: var(--font-family-one);
+}
+.card
+{
+    background-color: white;
+    width: 28vw;
+    height: 90vh;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+.image
+{
+    width: 100%;
+    height:40%;
+    margin:0;
+    background: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 0 0;
+    background-size:contain;
+}
+h1
+{
+    text-align: center;
+    margin: 0;
+    padding-top: 6vh;
+    font-size: 150%;
+    font-weight:900;
+    color: rgb(42, 42, 42);
+}
+p
+{
+    text-align: center;
+    padding: 15px 30px 0;
+    line-height: 160%;
+    font-size: 90%;
+    margin: 0;
+    color: rgb(128, 127, 127);
+}
+
+.subscription
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:hsl(225, 100%, 98%);
+    width: 320px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.price
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    
+}
+h2
+{
+    font-size: 16px;
+    margin-left: -20px;
+    margin-bottom: -13px;
+    margin-top: 1px;
+    
+}
+.price p{
+    font-size: 14px;
+    margin-left: -50px;
+    font-family: 500;
+    color: hsl(224, 23%, 55%);
+}
+.icon
+{
+    background: url(../images/icon-music.svg);
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+    background-repeat: no-repeat;
+   
+}
+
+.subscription a{
+
+    font-size: 12px;
+    font-weight: bold;
+}
+.subscription a:hover{
+ 
+    text-decoration: none;
+    color: blueviolet;
+    
+}
+button
+{
+    border: none;
+    width: 320px;
+    height: 50px;
+    border-radius: 11px;
+    border: 2px white solid;
+    margin-bottom: 0;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+
+    
+}
+.btnone
+{
+    margin-bottom: 11px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    box-shadow: -5px 10px 69px -15px rgba(0,0,0,0.78);
+}
+.btntwo
+{
+   border: none;
+   margin-bottom: 10px;
+   background-color:transparent;
+   border: 2px solid transparent;
+   color: hsl(224, 23%, 55%);
+   font-weight:900;
+   font-size: 13px;
+   font-family: var(--font-family-two);
+}
+.btnone:hover
+{
+   
+   background-color: blueviolet;
+   color: hsl(0, 0%, 100%);
+   cursor: pointer;
+}
+   
+.btntwo:hover
+{
+   color: hsl(0, 0%, 15%);
+   cursor: pointer;
+}
+.attribution { font-size: 11px; text-align: center;margin-top: 15px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+
+.card
+{
+    background-color: white;
+    width: 75vw;
+    height: 85vh;
+    margin: 0;
+    padding: 0;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+.image
+{
+    width: 100%;
+    height:50%;
+    margin:0;
+    padding-top: 0;
+    background: url(../images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    border-radius: 2vh 2vh 0 0;
+    background-size:contain;
+}
+.subscription
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:hsl(225, 100%, 98%);
+    width: 250px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button
+{
+    border: none;
+    width: 250px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 11px;
+    border: 2px white solid;
+    margin-bottom: 0;
+}
+.btntwo
+{
+   border: none;
+   margin-bottom: 10px;
+   background-color:transparent;
+   border: 2px solid transparent;
+   color: hsl(224, 23%, 55%);
+   font-weight:900;
+   font-size: 17px;
+   font-family: var(--font-family-two);
+}
+h1
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+    font-weight:900;
+    padding-top: 4vh;
+    color: rgb(42, 42, 42);
+}
+h2
+{
+    font-size: 14px;
+    font-weight:bolder;
+    margin-left: -1px;
+    margin-bottom: -13px;
+    margin-top: 1px;
+    
+}
+.price p{
+    font-size: 14px;
+    margin-left: -30px;
+    font-family: 500;
+    color: hsl(224, 23%, 55%);
+}
+.icon
+{
+    background: url(../images/icon-music.svg);
+    width: 50px;
+    height: 50px;
+    margin-left: -1px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+   
+}
+}
